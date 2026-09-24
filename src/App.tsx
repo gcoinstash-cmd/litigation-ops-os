@@ -197,7 +197,7 @@ export default function App() {
       </section>
 
       {/* Active High-Stakes Dockets */}
-      <section id="dockets" className="py-20 px-6 max-w-7xl mx-auto">
+      <section id="dockets" className="py-20 px-6 max-w-7xl mx-auto scroll-mt-20">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-rose-400">FEDERAL DOCKET PIPELINE</span>
@@ -278,7 +278,7 @@ export default function App() {
       </section>
 
       {/* Trial War Room Capabilities */}
-      <section id="warroom" className="py-20 px-6 bg-[#0E0E10] border-y border-zinc-800">
+      <section id="warroom" className="py-20 px-6 bg-[#0E0E10] border-y border-zinc-800 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono uppercase tracking-widest text-rose-400">TRIAL WAR ROOM PROTOCOL</span>
@@ -322,8 +322,67 @@ export default function App() {
         </div>
       </section>
 
+      {/* Forensic E-Discovery Vault Section */}
+      <section id="ediscovery" className="py-20 px-6 max-w-7xl mx-auto scroll-mt-20">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div>
+            <span className="text-xs font-mono uppercase tracking-widest text-rose-400">EVIDENTIARY ARCHITECTURE</span>
+            <h3 className="text-3xl font-extrabold text-white mt-1">Forensic E-Discovery Vault</h3>
+            <p className="text-sm text-zinc-400 mt-2 max-w-xl">
+              Cryptographically verified chain of custody. High-volume Slack, email, SMS, and enterprise ERP ingestion with automated Federal Rule 502 privilege protection.
+            </p>
+          </div>
+          <div className="mt-4 md:mt-0 flex gap-2">
+            <button
+              onClick={() => setIsAdminOpen(true)}
+              className="px-4 py-2 bg-rose-500/10 border border-rose-500/30 hover:bg-rose-500/20 text-rose-400 text-xs font-mono rounded-lg transition"
+            >
+              ACCESS EVIDENCE VAULT [ litigation2026 ]
+            </button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-rose-500/40 transition">
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/20">SHA-256 HASH VERIFIED</span>
+            <h4 className="text-lg font-bold text-white mt-3">Cryptographic Chain of Custody</h4>
+            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+              Every custodial hard drive, server image, and mobile device extraction stamped with immutable SHA-256 hashes to defeat spoliation claims.
+            </p>
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+              <span>Status: 100% Admissible</span>
+              <span className="text-rose-400">4.8M Documents</span>
+            </div>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-rose-500/40 transition">
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">PRIVILEGE DEFENSE</span>
+            <h4 className="text-lg font-bold text-white mt-3">Automated Privilege Logging</h4>
+            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+              AI-assisted attorney-client and work-product detection generating court-ready privilege logs compliant with local district court rules.
+            </p>
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+              <span>FRE 502(d) Clawback Orders</span>
+              <span className="text-amber-400">Zero Waiver Risk</span>
+            </div>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-rose-500/40 transition">
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-red-500/10 text-red-400 border border-red-500/20">TRIAL READY</span>
+            <h4 className="text-lg font-bold text-white mt-3">Dynamic Courtroom Exhibit Stamping</h4>
+            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+              Instant electronic exhibit numbering, pre-marked exhibit packages, and ELMO-ready high-resolution document callouts for jury trials.
+            </p>
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+              <span>Sync Speed: Sub-50ms</span>
+              <span className="text-rose-400">Jury Tested</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Case Intake Form */}
-      <section id="intake" className="py-20 px-6 max-w-4xl mx-auto">
+      <section id="intake" className="py-20 px-6 max-w-4xl mx-auto scroll-mt-20">
         <div className="bg-[#121214] border border-zinc-800 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
           <div className="max-w-2xl">
             <span className="text-xs font-mono uppercase tracking-widest text-rose-400">RAPID TRIAL AUDIT</span>
