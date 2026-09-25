@@ -80,7 +80,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               </div>
             </form>
 
-            <div className="mt-6 pt-6 border-t border-zinc-800 text-xs text-zinc-500 flex items-center justify-center gap-2">
+            <div className="mt-6 pt-6 border-t border-zinc-800 text-xs text-zinc-300 flex items-center justify-center gap-2">
               <Shield className="w-3.5 h-3.5 text-rose-400" />
               <span>Attorney-Client Privilege • Work-Product Immunity • Zero Leak Protocol</span>
             </div>
@@ -125,19 +125,19 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <div className="py-6 space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                   <div className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                    <p className="text-xs text-zinc-400">Aggregated Active Claim Value</p>
+                    <p className="text-base text-zinc-200 leading-relaxed">Aggregated Active Claim Value</p>
                     <p className="text-2xl font-bold text-rose-400 mt-1">$580,000,000</p>
-                    <p className="text-[11px] text-zinc-500 mt-1">11 Multi-District & Federal Actions</p>
+                    <p className="text-xs font-semibold text-zinc-300 mt-1">11 Multi-District & Federal Actions</p>
                   </div>
                   <div className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                    <p className="text-xs text-zinc-400">Deposition Calendar Sprints</p>
+                    <p className="text-base text-zinc-200 leading-relaxed">Deposition Calendar Sprints</p>
                     <p className="text-2xl font-bold text-white mt-1">26 Scheduled</p>
-                    <p className="text-[11px] text-rose-400 mt-1">C-Suite & Expert Witness Cross-Exams</p>
+                    <p className="text-xs font-semibold text-rose-400 mt-1">C-Suite & Expert Witness Cross-Exams</p>
                   </div>
                   <div className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                    <p className="text-xs text-zinc-400">Summary Judgment Win Rate</p>
+                    <p className="text-base text-zinc-200 leading-relaxed">Summary Judgment Win Rate</p>
                     <p className="text-2xl font-bold text-white mt-1">87.5%</p>
-                    <p className="text-[11px] text-zinc-500 mt-1">Pre-Trial Dismissal & Settlement Leverage</p>
+                    <p className="text-xs font-semibold text-zinc-300 mt-1">Pre-Trial Dismissal & Settlement Leverage</p>
                   </div>
                 </div>
 
@@ -145,18 +145,18 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 <div className="space-y-3">
                   <div className="p-4 rounded-xl bg-zinc-900/40 border border-zinc-800 flex justify-between items-center">
                     <div>
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/20 text-rose-400 border border-rose-500/30">SDNY // COMMERCIAL FRAUD</span>
+                      <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-rose-500/20 text-rose-400 border border-rose-500/30">SDNY // COMMERCIAL FRAUD</span>
                       <h5 className="font-semibold text-white mt-1">Vanguard Energy Corp v. Apex Petrochemical Global</h5>
-                      <p className="text-xs text-zinc-400">Claim: $185M • Stage: Expert Discovery & Daubert Motions • Trial: Q4 2026</p>
+                      <p className="text-base text-zinc-200 leading-relaxed">Claim: $185M • Stage: Expert Discovery & Daubert Motions • Trial: Q4 2026</p>
                     </div>
                     <span className="text-xs font-semibold px-3 py-1 rounded-full bg-rose-500/10 text-rose-400 border border-rose-500/20">Active War Room</span>
                   </div>
 
                   <div className="p-4 rounded-xl bg-zinc-900/40 border border-zinc-800 flex justify-between items-center">
                     <div>
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">DELAWARE CHANCERY // SHAREHOLDER DERIVATIVE</span>
+                      <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">DELAWARE CHANCERY // SHAREHOLDER DERIVATIVE</span>
                       <h5 className="font-semibold text-white mt-1">In re: Sovereign Cloudworks Governance Litigation</h5>
-                      <p className="text-xs text-zinc-400">Claim: $240M • Stage: Special Litigation Committee Review • Mediation Date Set</p>
+                      <p className="text-base text-zinc-200 leading-relaxed">Claim: $240M • Stage: Special Litigation Committee Review • Mediation Date Set</p>
                     </div>
                     <span className="text-xs font-semibold px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">Mediation Window</span>
                   </div>
@@ -174,10 +174,10 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   <div className="p-4 rounded-xl bg-zinc-900/40 border border-zinc-800 flex justify-between items-center">
                     <div>
                       <h5 className="font-semibold text-white">Bates Stamp Batch: APX-0014890 - APX-0021045</h5>
-                      <p className="text-xs text-zinc-400">Forensic Slack & Email Extraction • SHA-256 Hash Verified • Privilege Redactions Applied</p>
-                      <p className="text-[11px] text-zinc-500 mt-1">Metadata Hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</p>
+                      <p className="text-base text-zinc-200 leading-relaxed">Forensic Slack & Email Extraction • SHA-256 Hash Verified • Privilege Redactions Applied</p>
+                      <p className="text-xs font-semibold text-zinc-300 mt-1">Metadata Hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</p>
                     </div>
-                    <button className="px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-xs font-medium text-rose-300 rounded-lg border border-zinc-700">Audit Hash</button>
+                    <button className="px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-base font-semibold min-h-[44px] font-medium text-rose-300 rounded-lg border border-zinc-700">Audit Hash</button>
                   </div>
                 </div>
               </div>
@@ -204,7 +204,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
             )}
 
             <div className="mt-6 pt-4 border-t border-zinc-800 flex justify-between items-center">
-              <span className="text-xs text-zinc-500">Autonomous Litigation Ops Engine • Supabase RLS Protected</span>
+              <span className="text-xs text-zinc-300">Autonomous Litigation Ops Engine • Supabase RLS Protected</span>
               <button
                 onClick={() => setIsAuthenticated(false)}
                 className="text-xs text-rose-400 hover:underline"

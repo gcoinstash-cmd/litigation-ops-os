@@ -163,7 +163,7 @@ export default function App() {
                 <span>ACTIVE CLAIMS</span>
               </div>
               <p className="text-2xl font-bold text-white mt-1">$580 Million</p>
-              <p className="text-[11px] text-zinc-500 mt-0.5">11 Federal Actions</p>
+              <p className="text-xs font-semibold text-zinc-300 mt-0.5">11 Federal Actions</p>
             </div>
 
             <div className="p-4 rounded-xl bg-[#121214] border border-zinc-800">
@@ -172,7 +172,7 @@ export default function App() {
                 <span>SUMMARY JUDGMENTS</span>
               </div>
               <p className="text-2xl font-bold text-white mt-1">87.5%</p>
-              <p className="text-[11px] text-rose-400 mt-0.5">Pre-Trial Dispositive Win Rate</p>
+              <p className="text-xs font-semibold text-rose-400 mt-0.5">Pre-Trial Dispositive Win Rate</p>
             </div>
 
             <div className="p-4 rounded-xl bg-[#121214] border border-zinc-800">
@@ -181,7 +181,7 @@ export default function App() {
                 <span>E-DISCOVERY VAULT</span>
               </div>
               <p className="text-2xl font-bold text-white mt-1">4.8M Docs</p>
-              <p className="text-[11px] text-zinc-500 mt-0.5">SHA-256 Hash Verified</p>
+              <p className="text-xs font-semibold text-zinc-300 mt-0.5">SHA-256 Hash Verified</p>
             </div>
 
             <div className="p-4 rounded-xl bg-[#121214] border border-zinc-800">
@@ -190,7 +190,7 @@ export default function App() {
                 <span>VERDICTS & SETTLEMENTS</span>
               </div>
               <p className="text-2xl font-bold text-white mt-1">$1.2 Billion</p>
-              <p className="text-[11px] text-zinc-500 mt-0.5">Cumulative Recoveries</p>
+              <p className="text-xs font-semibold text-zinc-300 mt-0.5">Cumulative Recoveries</p>
             </div>
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function App() {
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-rose-400">FEDERAL DOCKET PIPELINE</span>
             <h3 className="text-3xl font-extrabold text-white mt-1">Active Complex Litigation</h3>
-            <p className="text-sm text-zinc-400 mt-2 max-w-xl">
+            <p className="text-base sm:text-lg text-zinc-200 leading-relaxed mt-2 max-w-xl">
               High-exposure commercial disputes pending in federal district courts and the Delaware Court of Chancery.
             </p>
           </div>
@@ -227,27 +227,27 @@ export default function App() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#121214] via-[#121214]/50 to-transparent"></div>
-                <div className="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-black/80 border border-zinc-700 text-[10px] font-mono font-bold text-rose-400">
+                <div className="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-black/80 border border-zinc-700 text-xs font-semibold tracking-wider font-mono font-bold text-rose-400">
                   {item.status}
                 </div>
               </div>
 
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <span className="text-[10px] font-mono font-semibold tracking-wider text-zinc-400 uppercase">{item.jurisdiction}</span>
+                  <span className="text-xs font-semibold tracking-wider font-mono font-semibold tracking-wider text-zinc-400 uppercase">{item.jurisdiction}</span>
                   <h4 className="text-xl font-bold text-white mt-1 group-hover:text-rose-300 transition-colors">{item.caseName}</h4>
 
                   <div className="mt-4 pt-4 border-t border-zinc-800/80 space-y-2 text-xs">
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Dispute Value:</span>
+                      <span className="text-zinc-300">Dispute Value:</span>
                       <span className="font-semibold text-rose-400">{item.claimAmount}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Trial Setting:</span>
+                      <span className="text-zinc-300">Trial Setting:</span>
                       <span className="font-semibold text-white">{item.trialDate}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-zinc-500">Procedural Stage:</span>
+                      <span className="text-zinc-300">Procedural Stage:</span>
                       <span className="font-semibold text-zinc-300">{item.stage}</span>
                     </div>
                   </div>
@@ -283,7 +283,7 @@ export default function App() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono uppercase tracking-widest text-rose-400">TRIAL WAR ROOM PROTOCOL</span>
             <h3 className="text-3xl font-extrabold text-white mt-1">Courtroom-Ready Operations Architecture</h3>
-            <p className="text-sm text-zinc-400 mt-2">
+            <p className="text-base sm:text-lg text-zinc-200 leading-relaxed mt-2">
               Replacing cumbersome binders and disparate vendors with a unified, high-security digital cockpit built for trial verdicts.
             </p>
           </div>
@@ -294,7 +294,7 @@ export default function App() {
                 <FileText className="w-6 h-6" />
               </div>
               <h4 className="text-lg font-bold text-white">Live Deposition Sync</h4>
-              <p className="text-xs text-zinc-400 mt-3 leading-relaxed">
+              <p className="text-base text-zinc-200 leading-relaxed mt-3 leading-relaxed">
                 Real-time synchronized video and rough ASCII transcript streaming directly into lead counsel's iPad in the courtroom. Instant cross-examination impeachment clips.
               </p>
             </div>
@@ -304,7 +304,7 @@ export default function App() {
                 <FolderLock className="w-6 h-6" />
               </div>
               <h4 className="text-lg font-bold text-white">Cryptographic Bates Chain</h4>
-              <p className="text-xs text-zinc-400 mt-3 leading-relaxed">
+              <p className="text-base text-zinc-200 leading-relaxed mt-3 leading-relaxed">
                 Immutable SHA-256 hash tracking for every electronic record produced in discovery. Absolute evidentiary admissibility defense against spoliation motions.
               </p>
             </div>
@@ -314,7 +314,7 @@ export default function App() {
                 <DollarSign className="w-6 h-6" />
               </div>
               <h4 className="text-lg font-bold text-white">Litigation Funding Syndication</h4>
-              <p className="text-xs text-zinc-400 mt-3 leading-relaxed">
+              <p className="text-base text-zinc-200 leading-relaxed mt-3 leading-relaxed">
                 Non-recourse commercial litigation capital facilities. Off-balance-sheet fee advances, adverse cost protection wraps, and expert witness war chests.
               </p>
             </div>
@@ -328,7 +328,7 @@ export default function App() {
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-rose-400">EVIDENTIARY ARCHITECTURE</span>
             <h3 className="text-3xl font-extrabold text-white mt-1">Forensic E-Discovery Vault</h3>
-            <p className="text-sm text-zinc-400 mt-2 max-w-xl">
+            <p className="text-base sm:text-lg text-zinc-200 leading-relaxed mt-2 max-w-xl">
               Cryptographically verified chain of custody. High-volume Slack, email, SMS, and enterprise ERP ingestion with automated Federal Rule 502 privilege protection.
             </p>
           </div>
@@ -344,36 +344,36 @@ export default function App() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-rose-500/40 transition">
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/20">SHA-256 HASH VERIFIED</span>
+            <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/20">SHA-256 HASH VERIFIED</span>
             <h4 className="text-lg font-bold text-white mt-3">Cryptographic Chain of Custody</h4>
-            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+            <p className="text-base text-zinc-200 leading-relaxed mt-2 leading-relaxed">
               Every custodial hard drive, server image, and mobile device extraction stamped with immutable SHA-256 hashes to defeat spoliation claims.
             </p>
-            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-xs font-semibold text-zinc-300 flex justify-between">
               <span>Status: 100% Admissible</span>
               <span className="text-rose-400">4.8M Documents</span>
             </div>
           </div>
 
           <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-rose-500/40 transition">
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">PRIVILEGE DEFENSE</span>
+            <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">PRIVILEGE DEFENSE</span>
             <h4 className="text-lg font-bold text-white mt-3">Automated Privilege Logging</h4>
-            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+            <p className="text-base text-zinc-200 leading-relaxed mt-2 leading-relaxed">
               AI-assisted attorney-client and work-product detection generating court-ready privilege logs compliant with local district court rules.
             </p>
-            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-xs font-semibold text-zinc-300 flex justify-between">
               <span>FRE 502(d) Clawback Orders</span>
               <span className="text-amber-400">Zero Waiver Risk</span>
             </div>
           </div>
 
           <div className="p-6 rounded-2xl bg-[#121214] border border-zinc-800 hover:border-rose-500/40 transition">
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-red-500/10 text-red-400 border border-red-500/20">TRIAL READY</span>
+            <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-red-500/10 text-red-400 border border-red-500/20">TRIAL READY</span>
             <h4 className="text-lg font-bold text-white mt-3">Dynamic Courtroom Exhibit Stamping</h4>
-            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
+            <p className="text-base text-zinc-200 leading-relaxed mt-2 leading-relaxed">
               Instant electronic exhibit numbering, pre-marked exhibit packages, and ELMO-ready high-resolution document callouts for jury trials.
             </p>
-            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-[11px] text-zinc-500 flex justify-between">
+            <div className="mt-4 pt-4 border-t border-zinc-800/80 text-xs font-semibold text-zinc-300 flex justify-between">
               <span>Sync Speed: Sub-50ms</span>
               <span className="text-rose-400">Jury Tested</span>
             </div>
@@ -387,7 +387,7 @@ export default function App() {
           <div className="max-w-2xl">
             <span className="text-xs font-mono uppercase tracking-widest text-rose-400">RAPID TRIAL AUDIT</span>
             <h3 className="text-3xl font-extrabold text-white mt-1">Submit Dispute For Case Assessment</h3>
-            <p className="text-sm text-zinc-400 mt-2">
+            <p className="text-base sm:text-lg text-zinc-200 leading-relaxed mt-2">
               Strictly confidential evaluation covered by attorney-client privilege. Rapid conflict clearing within 4 business hours.
             </p>
           </div>
@@ -395,7 +395,7 @@ export default function App() {
           <form onSubmit={handleSubmitLitigationInquiry} className="mt-8 space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-mono uppercase text-zinc-400 mb-2">Claimant / Corporate Entity</label>
+                <label className="block text-sm font-semibold font-mono uppercase text-zinc-400 mb-2">Claimant / Corporate Entity</label>
                 <input
                   type="text"
                   required
@@ -407,7 +407,7 @@ export default function App() {
               </div>
 
               <div>
-                <label className="block text-xs font-mono uppercase text-zinc-400 mb-2">Adverse / Opposing Party</label>
+                <label className="block text-sm font-semibold font-mono uppercase text-zinc-400 mb-2">Adverse / Opposing Party</label>
                 <input
                   type="text"
                   required
@@ -421,7 +421,7 @@ export default function App() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-mono uppercase text-zinc-400 mb-2">Lead Counsel / GC Email</label>
+                <label className="block text-sm font-semibold font-mono uppercase text-zinc-400 mb-2">Lead Counsel / GC Email</label>
                 <input
                   type="email"
                   required
@@ -433,7 +433,7 @@ export default function App() {
               </div>
 
               <div>
-                <label className="block text-xs font-mono uppercase text-zinc-400 mb-2">Estimated Claim Size</label>
+                <label className="block text-sm font-semibold font-mono uppercase text-zinc-400 mb-2">Estimated Claim Size</label>
                 <select
                   value={claimScale}
                   onChange={(e) => setClaimScale(e.target.value)}
@@ -475,20 +475,20 @@ export default function App() {
 
             <div className="my-6 p-4 rounded-xl bg-zinc-900 border border-zinc-800 space-y-2 text-xs">
               <div className="flex justify-between">
-                <span className="text-zinc-500">Damages Sought:</span>
+                <span className="text-zinc-300">Damages Sought:</span>
                 <span className="text-rose-400 font-bold">{selectedCase.claimAmount}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-zinc-500">Trial Setting:</span>
+                <span className="text-zinc-300">Trial Setting:</span>
                 <span className="text-white font-semibold">{selectedCase.trialDate}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-zinc-500">Current Status:</span>
+                <span className="text-zinc-300">Current Status:</span>
                 <span className="text-amber-400 font-semibold">{selectedCase.status}</span>
               </div>
             </div>
 
-            <p className="text-xs text-zinc-500 mb-6">
+            <p className="text-xs text-zinc-300 mb-6">
               Complete privileged docket entries, expert work product, and deposition clips require lead counsel authorization.
             </p>
 
@@ -520,7 +520,7 @@ export default function App() {
       />
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-zinc-800/80 bg-[#0A0A0B] text-zinc-500 text-xs">
+      <footer className="py-12 px-6 border-t border-zinc-800/80 bg-[#0A0A0B] text-zinc-300 text-xs">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-rose-600 flex items-center justify-center text-white font-black">
@@ -528,7 +528,7 @@ export default function App() {
             </div>
             <div>
               <p className="font-bold text-white tracking-wide">LITIGATION OPS OS</p>
-              <p className="text-[11px] text-zinc-500">High-Stakes Commercial Trial & E-Discovery Command Center</p>
+              <p className="text-xs font-semibold text-zinc-300">High-Stakes Commercial Trial & E-Discovery Command Center</p>
             </div>
           </div>
 
